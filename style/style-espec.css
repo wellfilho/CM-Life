@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+  body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff; 
+      font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  }
+
+  main {
+    color: #0000008c;
+    margin-bottom: 60px;
+  }
+
+  h4 {
+      margin: 0;
+  }
+/* ----------------------------------------------------------- */
+  .topo {
+    background-color: #00CAD1;
+    width: 100%;
+}
+
+.topo .box-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.container-logo {
+  font-weight: 600;
+  font-size: 28px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-logo a {
+    display: flex;
+}
+
+.topo-logo {
+    height: 60px;
+}
+
+.links-topo { 
+  display: flex;
+}
+
+.links-topo a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.links-topo a:hover {
+  color: #00687F;
+}
+
+/* ----------------------------------------------------------- */
+
+.container-links-espec{
+    padding: 0 20px;
+    text-align: center;
+}
+
+.links-spec {  
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.links-spec a {
+    margin: 0 10px 10px;
+    
+    text-decoration: none;
+    
+    font-size: 18px;
+    font-weight: 600;
+    
+    color: #0000008c;
+    border-bottom: 2px solid #00CAD1;
+}
+
+.links-spec a:hover {
+    color: #0d6e71;
+}
+
+.visao-geral {
+    margin: auto;
+    margin-top: 40px;
+    max-width: 1024px;
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.container-desc {
+    width: 50%;
+    text-align: center;
+}
+
+.container-horarios{
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+    width: 90%;
+}
+
+.container-horarios img {
+    width: 30%;
+    height: 100%;
+
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+}
+
+.table-horarios {
+    width: 70%;
+    height: 100%;
+
+    border-spacing: 0;
+    text-align: left;
+    
+}
+
+.table-horarios thead tr {
+    background-color: #00CAD1;
+    color: white;
+}
+
+.table-horarios tr {
+    background-color: #f1f1f1;
+    color: #585757;
+    font-weight: 500;
+}
+
+.table-horarios tbody tr:nth-of-type(2n+1){
+background-color: #CDCDCD;
+border: 1px solid #f1f1f1;
+}
+
+.table-horarios th, .table-horarios td {
+    padding: 10px;
+}
+
+/* ----------------------------------------------------------- */
+
+.rodape{
+    background-color: #0D6E71;
+    color: white;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.container-rodape {
+    text-align: center;
+}
+
+/* ----------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .container-horarios {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    
+    .container-desc {
+        width: 90%;
+    }
+    .container-horarios img {
+        display: none;
+    }
+
+    .table-horarios {
+        width: 100%;
+    }  
+}
+
+@media (max-width: 425px) {
+    .topo .box-top {
+        flex-direction: column;
+    }  
+
+    .container-logo {
+        margin: 10px 0;
+    }
+    
+    .topo .links-topo {
+        justify-content: space-around;
+        width: 100%;
+        border-top: 1px solid #009fa5;
+    }
+
+    .container-horarios {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+}

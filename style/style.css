@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+  body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff; 
+      font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  }
+
+  main {
+    color: #0000008c;
+    margin-bottom: 60px;
+  }
+
+  .visao-geral {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .visao-geral h2, .visao-geral h3 {
+      margin: 0;
+  }
+
+  /* ----------------------------------------------------------- */
+
+  .topo {
+      background-color: #00CAD1;
+      width: 100%;
+  }
+
+  .topo .box-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      width: 100%;
+      min-height: 60px;
+      padding: 0 10px;
+      margin: 0 auto;
+  }
+
+  .container-logo {
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-logo a {
+      display: flex;
+  }
+
+  .topo-logo {
+      height: 60px;
+  }
+
+  .links-topo { 
+    display: flex;
+}
+
+.links-topo a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.links-topo a:hover {
+    color: #00687F;
+}
+
+/* ----------------------------------------------------------- */
+
+#sobre, #especialidades, #contato {
+    padding: 40px 20px 0;
+}
+
+.section-titulo {
+    position: relative;
+      background-image: url(../assets/recepcao.png);
+      background-size: cover;
+      background-repeat: repeat;
+
+      height: 500px;
+      width: 100%;
+  }
+
+  .container-titulo {
+    height: 100%;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-titulo div h1 {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 38px;
+      margin: 0;
+  }
+
+  .container-sobre {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .container-sobre h3 {
+      font-weight: 500;
+      text-transform: uppercase;
+  }
+
+  .container-sobre img {
+      height: 250px;
+  }
+
+  .container-imgs-espec {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.figure-espec {
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+
+.figure-espec img {
+    width: 100%;
+}
+
+.figure-espec figcaption {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.container-link-espec {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container-link-espec a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: #00CAD1;
+}
+
+/* ----------------------------------------------------------- */
+
+.rodape{
+    background-color: #0D6E71;
+    color: white;
+    padding: 20px;
+}
+
+.container-rodape {
+    text-align: center;
+}
+
+/* ----------------------------------------------------------- */
+
+@media (min-width: 1025px) {
+    .section-titulo {
+        height: 500px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section-titulo {
+        height: 400px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .section-titulo {
+        width: auto;
+        height: 300px;
+    }
+
+    .section-titulo div h1 {
+        font-size: 30px;
+    }
+
+    .container-sobre img {
+        display: none;
+    }
+
+    .container-imgs-espec {
+        justify-content: center;
+    }
+
+    .figure-espec {
+        width: calc(100% / 2 - 40px);
+    }
+}
+
+@media (max-width: 425px) {
+    .topo .box-top {
+        flex-direction: column;
+    }  
+
+    .container-logo {
+        margin: 10px 0;
+    }
+    
+    .topo .links-topo {
+        justify-content: space-around;
+        width: 100%;
+        border-top: 1px solid #009fa5;
+    }
+
+    .section-titulo {
+        height: 200px;
+    }
+    
+    .section-titulo div h1 {
+        font-size: 28x;
+    }
+
+    .container-sobre img {
+        display: none;  
+    }
+
+    .figure-espec {
+        width: 100%;
+    }
+}
